@@ -7,7 +7,7 @@ exports.up = function(knex) {
     .createTable("ingredients", table => {
       table.increments();
       table.string("ingredient_name", 128).notNullable();
-      table.string("measurment_units", 128);
+      table.string("measurement_units", 128);
     })
     .createTable("recipes_and_ingredients", table => {
       table.increments();
